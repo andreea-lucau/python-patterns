@@ -1,6 +1,6 @@
 """This is a sample code that uses the abstract factory pattern."""
 #!/usr/bin/env python
-# pylint: disable=too-few-public-methods
+# pylint: disable=too-few-public-methods,duplicate-code
 
 import abc
 import argparse
