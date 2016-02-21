@@ -1,4 +1,4 @@
-"""Sample usage of Builder Factory Pattern.
+"""Sample usage of the Builder Factory pattern.
 
 You have a builder class, that hold a structure. The builder class can be
 extended so that the objects that make up the structure are specific to the
