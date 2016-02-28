@@ -26,6 +26,7 @@ setup(
         "": "src",
     },
     install_requires=[
+        "psutil",
         "setuptools",
         "setuptools-lint",
     ],
