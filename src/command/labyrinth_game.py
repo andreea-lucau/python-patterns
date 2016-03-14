@@ -9,6 +9,12 @@ import sys
 import termios
 import tty
 
+LEFT = 67
+RIGHT = 68
+UP = 65
+DOWN = 66
+QUIT = 113
+
 class Command(object):
     def __init__(self, labyrinth):
         self.labyrinth = labyrinth
@@ -108,11 +114,11 @@ def play_game():
     labyrinth = Labyrinth("labyrinth.txt")
 
     commands = {
-        67: MoveLeft(labyrinth),
-        68: MoveRight(labyrinth),
-        65: MoveUp(labyrinth),
-        66: MoveDown(labyrinth),
-        113: Quit(labyrinth)
+        LEFT: MoveLeft(labyrinth),
+        RIGHT: MoveRight(labyrinth),
+        UP: MoveUp(labyrinth),
+        DOWN: MoveDown(labyrinth),
+        QUIT: Quit(labyrinth)
     }
 
     while not labyrinth.is_solved():
