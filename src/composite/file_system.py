@@ -1,4 +1,4 @@
-"""Sample usage of the Composite Factory pattern."""
+"""Sample usage of the Composite pattern."""
 #!/usr/bin/env python
 # pylint: disable=missing-docstring,too-few-public-methods
 import os
