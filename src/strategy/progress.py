@@ -2,7 +2,6 @@
 #!/usr/bin/env python
 # pylint: disable=missing-docstring,too-few-public-methods
 
-import os
 import sys
 import termios
 import time
@@ -61,7 +60,7 @@ def display_progress():
     progress.do_work()
 
     print "Press any key to change the display strategy"
-    input_command = read_command()
+    _ = read_command()
 
     progress.reset()
     progress.set_display(progress_percent_display)
